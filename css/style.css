@@ -1,0 +1,260 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --denger-color: #f25454;
+    --black-color: #282828;
+    --back-header: #f2f2f2;
+    --p-color: #999;
+    --backgound-color: #fafafa;
+}
+/* startt nav */
+nav{
+    box-shadow: 0px 0px 9px 1px #d0d0d0;
+}
+nav .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link{
+    transition: 0.5s;
+    color: black;
+}
+nav .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color: var(--denger-color);
+}
+/* end nav */
+/* start home-padge */
+.home-padge .carousel .carousel-inner .carousel-item .imge-1{
+    background-image: url(../imge/slideshow-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-padge .carousel .carousel-inner .carousel-item .imge-2{
+    background-image: url(../imge/slideshow-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-padge .carousel .carousel-inner .carousel-item .imge-3{
+    background-image: url(../imge/slideshow-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-padge .carousel .carousel-control-prev ,.carousel-control-next{
+    width: 2%;
+    height: fit-content;
+}
+.home-padge .carousel .carousel-control-prev .carousel-control-prev-icon{
+    position: absolute;
+    top: 427px;
+    left: 0;
+    padding: 20px;
+    border: 1px solid white;
+}
+.home-padge .carousel .carousel-control-next .carousel-control-next-icon{
+    border: 1px solid white;
+    border-top: none;
+    padding: 20px;
+    position: absolute;
+    top: 468px;
+    right: 1861px
+}
+.home-padge .carousel .carousel-inner .bg-black{
+    top: 25%;
+}
+/* end home-padge */
+/* start about section*/
+.about{
+    margin: 5rem auto;
+}
+.header h2{
+    color: var(--black-color);
+    position: relative;
+}
+.header p{
+    color: var(--p-color);
+}
+.header h2::after{
+    content: "A";
+    position: absolute;
+    top: -104%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--back-header);
+    font-size: 7rem;
+    z-index: -1;
+}
+.header h2::before{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.about .container .header:hover h2::before{
+    width: 90px;
+}
+.about .container .row .col-md-6 .min-about .progress{
+    height: 5px;
+}
+.about .container .row .col-md-6 .min-about .progress-bar{
+    background-color: var(--denger-color);
+}
+.about .container .row .col-md-6 .min-about p{
+    color: var(--p-color);
+    line-height: 1.9;
+}
+/* end about section*/
+/* start team section */
+.team .container .header h2::after{
+    content: "O";
+}
+.team .container .header h2::before{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.team .container .header:hover h2::before{
+    width: 90px;
+}
+.team .container .row .card .position-relative .lyear{
+    opacity: 0;
+    transition: 0.5s;
+}
+.team .container .row .card .card-img-top{
+    transition: 0.5s;
+}
+.team .container .row .card:hover .card-img-top{
+    transform: scale(1.4);
+}
+.team .container .row .card:hover .lyear{
+    opacity: 1;
+    background-color: #f254549f;
+    cursor: pointer;
+}
+.team .container .row .card:hover .card-body h5{
+    transition: 0.5s;
+}
+.team .container .row .card:hover .card-body h5{
+    color: #f25454;
+}
+.team .container .row .card .card-body .card-text{
+    color: var(--p-color);
+}
+/* end team section */
+/* start services section */
+.services{
+    background-color: var(--backgound-color);
+}
+.services .container .header h2::after{
+    content: "S";
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    z-index: -1;
+}
+.services .container .header h2::before{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.services .container .header:hover h2::before{
+    width: 90px;
+}
+.services .container .row .col-md-6 h4{
+    transition: 0.5s;
+}
+.services .container .row .col-md-6:hover h4{
+    color: var(--denger-color);
+    cursor: pointer;
+} 
+/* end  services section */
+/* start blog section */
+.blog .container .header h2::after{
+    content: "C";
+}
+.blog .container .header h2::before{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.blog .container .header:hover h2::before{
+    width: 90px;
+}
+/* end blog section */
+/* start contant */
+.contact{
+    background-color: var(--backgound-color);
+}
+.contact .container .header h2::after{
+    content: "C";
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    z-index: -1;
+}
+.contact .container .header h2::before{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.contact .container .header:hover h2::before{
+    width: 90px;
+}
+/* end contant */
+/* world section */
+.world .container .row .col-md-6 p{
+    transition: 0.5s;
+}
+.world .container .row .col-md-6 .text-white{
+    transition: 0.5s;
+}
+.world .container .row .col-md-6 p:hover{
+    color: var(--denger-color);
+}
+.world .container .row .col-md-6 .text-white:hover{
+    color: var(--denger-color);
+}
+/* end world wection */
+/* start footer */
+.bg-black .container .d-flex .fa-brands{
+    transition: 0.5s;
+    color: white;
+}
+.bg-black .container .d-flex .fa-brands:hover{
+    color: #f25454;
+    cursor: pointer;
+}
+/* end footer */
